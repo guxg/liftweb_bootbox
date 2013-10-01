@@ -15,7 +15,7 @@ class HelloWorld {
   // replace the contents of the element with id "time" with the date
   def howdy = "#time *" #> date.toString//date.map(_.toString)
 
-  def dialog(in :NodeSeq) = ajaxButton("Call Dialog", () => new ModalDialog(<p>Test</p>,"hello")) 
+  def dialog(in :NodeSeq) = ajaxButton("Call Dialog", () => BootBoxAlert("hello")) 
   /*
    lazy val date: Date = DependencyFactory.time.vend // create the date via factory
 

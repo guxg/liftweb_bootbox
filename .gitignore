@@ -1,5 +1,5 @@
-project/target/**/*
-target/**/*
+project/target
+target
 console.devmode.log
 
 
