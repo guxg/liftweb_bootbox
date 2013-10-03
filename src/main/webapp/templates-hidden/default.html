@@ -12,30 +12,33 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet"/>
   <body>
-    <div class="container">
-      <div class="column span-12 last" style="text-align: right">
-        <h1 class="alt">app<img alt="" id="ajax-loader" style="display:none; margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif"></h1>
-      </div>
+    <div class="container-fluid">
+		<div class="row-fluid">
+	      	<div class="span-12">
+		        <h1>Sample app</h1>
+			
+		      </div>
 
-      <hr>
-
-      <div class="column span-6 colborder sidebar">
-        <hr class="space" >
-
-	<span class="lift:Menu.builder"></span>
-
-        <div class="lift:Msgs?showAll=true"></div>
-        <hr class="space" />
-      </div>
-
-      <div class="column span-17 last">
-        <div id="content">The main content will get bound here</div>
-      </div>
-		
-	
-      <hr />
+			
       
-    </div>
+		      <div class="span-6">
+      
+					<div class="sidebar-nav sidebar-nav-fixed">
+			        	<span class="lift:Menu.builder"></span>
+					</div>
+					
+		        
+        
+		      </div>
+		
 
+
+		      <div class="span-17 last">
+				<div class="lift:Msgs?showAll=true"></div>
+				<img alt="" id="ajax-loader" style="display:none; margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif"/>
+		        <div id="content">The main content will get bound here</div>
+		      </div>
+	    </div>
+	</div>
   </body>
 </html>
