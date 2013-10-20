@@ -1,4 +1,4 @@
 liftweb_bootbox
 ===============
 
-bootbox modal dialogs for liftweb framework
+Integration for [bootbox](http://bootboxjs.com/)  modal dialogs with liftweb framework.
