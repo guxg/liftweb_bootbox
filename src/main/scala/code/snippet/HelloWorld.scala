@@ -19,9 +19,9 @@ class HelloWorld extends Loggable {
   // replace the contents of the element with id "time" with the date
   def howdy = "#time *" #> date.toString //date.map(_.toString)
 
-  def alert(in: NodeSeq) = ajaxButton("Alert", () => BootBoxAlert("hello"))
+  def alert(in: NodeSeq) = ajaxButton("Alert", () => BootBoxAlert("hello"), "class" -> "btn btn-primary" )
 
-  def confirm(in: NodeSeq) = ajaxButton("Confirm", () => BootBoxConfirm("Confirm text", ajaxFunc1))
+  def confirm(in: NodeSeq) = ajaxButton("Confirm", () => BootBoxConfirm("Confirm text", ajaxFunc1),"class" -> "btn btn-primary")
 
   def ajaxFunc1(): JsCmd = {
     logger.info("bootbox confirm callback called ");
@@ -29,7 +29,7 @@ class HelloWorld extends Loggable {
   }
 
   ///prompt exmample
-  def prompt(in: NodeSeq) = ajaxButton("Prompt", () => BootBoxPrompt("Write something", ajaxFunc2))
+  def prompt(in: NodeSeq) = ajaxButton("Prompt", () => BootBoxPrompt("Write something", ajaxFunc2),"class" -> "btn btn-primary")
 
   def ajaxFunc2(result:String): JsCmd = {
     logger.info("bootbox confirm called ")
@@ -40,6 +40,8 @@ class HelloWorld extends Loggable {
     JsRaw("alert('empty')")
   }
 
+ 
+  
   /*
    lazy val date: Date = DependencyFactory.time.vend // create the date via factory
 
